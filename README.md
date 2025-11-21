@@ -1,11 +1,11 @@
-# List-IAM-Users
+# List-AWS-IAM-Users
 List AWS IAM users
 
 # Github section
-Create a github repo - I have created with a name "List-IAM-Users" where repo URL looks likes this: https://github.com/akshitkhosla/List-IAM-Users
+Create a github repo - I have created with a name "List-AWS-IAM-Users" where repo URL looks likes this: https://github.com/akshitkhosla/List-AWS-IAM-Users
 where:
 - "akshitkhosla" is the "organization",
-- "List-IAM-Users" is the "repository" &
+- "List-AWS-IAM-Users" is the "repository" &
 - "branch" I have kept as default one i.e. "main" 
 
 # AWS Section
@@ -39,7 +39,7 @@ Reference:
 - Mention Identity Provider, which you have created above- in my case it is saved with a name "token.actions.githubusercontent.com"
 - Set the "Audience" as "sts.amazonaws.com"
 - Set "GitHub organization" as "akshitkhosla"
-- Set "GitHub repository" as "List-IAM-Users"
+- Set "GitHub repository" as "List-AWS-IAM-Users"
 - Set "GitHub branch" as "main"
 - Attach above created policy i.e. "ListIAMUsers" to it as it will give permission to list AWS IAM users.
 - Mention the Role name and description as per your wish - In my case I have stated it as "Github-Access-Role"
