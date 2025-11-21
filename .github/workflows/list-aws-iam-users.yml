@@ -34,8 +34,8 @@ jobs:
           # role-to-assume: arn:aws:iam::<AWS_Account_ID>:role/Github-Access-Role
           aws-region: us-east-1
           
-      - name : Validate AWS Role
-        run: aws sts get-caller-identity
+#      - name : Validate AWS Role
+#        run: aws sts get-caller-identity
           
       - name: List AWS Users
-        run: aws iam list-users
+        run: aws iam list-users --query "Users[*].UserName"
