@@ -60,7 +60,7 @@ It will create the role with a name "Github-Access-Role" with permission policy 
                     "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
                 },
                 "StringLike": {
-                    "token.actions.githubusercontent.com:sub": "repo:akshitkhosla/List-IAM-Users:ref:refs/heads/main"
+                    "token.actions.githubusercontent.com:sub": "repo:akshitkhosla/List-AWS-IAM-Users:ref:refs/heads/main"
                 }
             }
         }
@@ -121,7 +121,7 @@ In place of role to assume you can add its value to github secret and call the v
 You don’t need to store AWS keys — but you should store the role ARN in a repo secret (so the workflow can reference it):
 - Repo → Settings → Secrets & variables → Actions → New repository secret
   - Name: AWS_ROLE_TO_ASSUME
-  - Value: arn:aws:iam::123456789012:role/GitHubActionsOIDCRole
+  - Value: arn:aws:iam::<AWS_Account_ID>:role/Github-Access-Role
 
 **Why a secret?** 
 
