@@ -1,5 +1,5 @@
 # List-AWS-IAM-Users
-List AWS IAM users
+List AWS IAM users from Github Actions to understand the process of pipeline when dealing with AWS services.
 
 # Github section
 Create a github repo - I have created with a name "List-AWS-IAM-Users" where repo URL looks likes this: https://github.com/akshitkhosla/List-AWS-IAM-Users
